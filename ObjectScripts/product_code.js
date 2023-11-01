@@ -1,7 +1,5 @@
 "use strict";
 
-"use strict";
-
 let partCode1 = "XYZ:1234-L";
 
 let parsedCode = parsePartCode(partCode1); 
