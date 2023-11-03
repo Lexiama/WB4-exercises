@@ -37,22 +37,18 @@ let courses = [
    ];
   
 
-   // sort it by title 
 
-   courses.sort((a, b) => {
-    const titleA = a.Title.toUpperCase();
-    const titleB = b.Title.toUpperCase();
-  
-    if (titleA < titleB) {
-      return -1;
-    }
-    if (titleA > titleB) {
-      return 1;
-    }
-    return 0;
-  });
-  
-  console.log(courses);
-  
-   
-   
+// sort by course title
+
+courses.sort(function(a, b) {
+
+    if (a.Title < b.Title) return -1;
+    else if (a.Title == b.Title) return 0;
+    else return 1;
+
+ });
+
+ let courseTitle = courses.length;
+for(let i = 0; i < courseTitle; i++) {
+ console.log(courses[i].Title);
+ }
