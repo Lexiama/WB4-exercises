@@ -1,0 +1,6 @@
+let kids = ["Natalie", "Brittany", "Zachary"];
+
+
+for (let value of kids) {
+ console.log(value);
+}
